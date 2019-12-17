@@ -5,6 +5,10 @@ const MainHeading = styled.h1`
   font-size: 2.5rem;
   margin-right: 1.5rem;
   font-weight: 500;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
 `;
 
 const MainHeadingWrapper = styled.div`
@@ -20,6 +24,10 @@ const Dot = styled.div`
   border-radius: 1rem;
   background-color: #6050dc;
   margin: 1.3rem 1rem;
+
+  @media only screen and (max-width: 600px) {
+    margin: 1rem 1rem;
+  }
 `;
 
 const Line = styled.div`
@@ -27,6 +35,10 @@ const Line = styled.div`
   width: 50%;
   background-color: #6050dc;
   margin: 1.6rem 0;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const SectionHeading = ({ title }) => (

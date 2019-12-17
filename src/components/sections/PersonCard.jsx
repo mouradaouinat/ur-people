@@ -7,24 +7,38 @@ const Card = styled.div`
   width: 100%;
   border-radius: 1rem;
   margin: 3rem auto;
-  position: relative;
+  padding: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 const Wrapper = styled.div`
   width: 25%;
   margin: 2rem 2rem;
 
+  @media only screen and (max-width: 768px) {
+    width: 50%;
+  }
+
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 90%;
   }
 `;
 
 const CardImage = styled.div`
-  position: absolute;
-  right: 3rem;
-  top: 0;
   border-radius: 200px;
   overflow: hidden;
+  margin-right: 2.5rem;
+  margin-top: 2.5rem;
+  float: right;
+
+  @media only screen and (max-width: 600px) {
+    border: 0.6rem solid rgba(100, 100, 100, 0.2);
+  }
 `;
 
 const CardInfo = styled.div`

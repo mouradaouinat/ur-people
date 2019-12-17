@@ -4,7 +4,7 @@ import urPeople from "../../ur-people.svg";
 import dots from "../../dots.svg";
 
 const Container = styled.div`
-  width: 90%;
+  width: 100%;
   height: 6.5rem;
   background: #fff;
   border-radius: 0.5rem;
