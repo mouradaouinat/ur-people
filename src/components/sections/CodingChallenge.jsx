@@ -23,6 +23,10 @@ const CardTitle = styled.h1`
   font-weight: 300;
   font-size: 1.6rem;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const CardLink = styled.a`

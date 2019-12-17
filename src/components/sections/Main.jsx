@@ -28,6 +28,7 @@ const Container = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: 90%;
+    margin: auto;
   }
 `;
 
