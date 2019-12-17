@@ -13,6 +13,10 @@ const Card = styled.div`
 const Wrapper = styled.div`
   width: 25%;
   margin: 2rem 2rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const CardImage = styled.div`

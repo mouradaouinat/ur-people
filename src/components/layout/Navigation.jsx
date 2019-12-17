@@ -10,6 +10,10 @@ const Title = styled.h3`
 const Container = styled.div`
   margin-top: 8rem;
   position: relative;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Nav = styled.nav`

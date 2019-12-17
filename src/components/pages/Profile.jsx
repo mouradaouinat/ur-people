@@ -8,6 +8,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const Profile = () => (

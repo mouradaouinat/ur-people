@@ -25,6 +25,10 @@ const Container = styled.div`
   margin-top: 3rem;
   margin-left: 3rem;
   margin-right: 4rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 const Main = () => {
