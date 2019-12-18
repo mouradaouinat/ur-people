@@ -8,6 +8,11 @@ const Container = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 590px;
+    text-align: center;
+  }
 `;
 
 const Nav = styled.div`
@@ -18,6 +23,11 @@ const Nav = styled.div`
 
 const Logo = styled.div`
   margin-top: 1.2rem;
+
+  @media only screen and (max-width: 600px) {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Search = styled.div`
@@ -29,6 +39,10 @@ const Search = styled.div`
     border-radius: 0.3rem;
     padding: 1rem;
     font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin: auto;
   }
 `;
 

@@ -55,6 +55,10 @@ const CardSubHeading = styled.h2`
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 `;
 
 const HeadingTertiary = styled.h3`
@@ -73,6 +77,10 @@ const TextMuted = styled.h2`
 const Description = styled.p`
   font-size: 1.3rem;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
 `;
 
 const Button = styled.a`
@@ -105,6 +113,17 @@ const StackUL = styled.ul`
   }
 `;
 
+const Skills = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
 const PersonCard = () => (
   <Wrapper>
     <NavBar></NavBar>
@@ -125,24 +144,26 @@ const PersonCard = () => (
           <Button href="#!">Resume.pdf</Button>
         </div>
         <CardSubHeading>Tech Stack</CardSubHeading>
-        <HeadingTertiary>Experienced in</HeadingTertiary>
-        <StackUL>
-          <li>bach</li>
-          <li>bach</li>
-          <li>bach</li>
-        </StackUL>
-        <HeadingTertiary>Proficient in</HeadingTertiary>
-        <StackUL>
-          <li>bach</li>
-          <li>bach</li>
-          <li>bach</li>
-        </StackUL>
-        <HeadingTertiary>Proficient in</HeadingTertiary>
-        <StackUL>
-          <li>bach</li>
-          <li>bach</li>
-          <li>bach</li>
-        </StackUL>
+        <Skills>
+          <StackUL>
+            <HeadingTertiary>Experienced in</HeadingTertiary>
+            <li>bach</li>
+            <li>bach</li>
+            <li>bach</li>
+          </StackUL>
+          <StackUL>
+            <HeadingTertiary>Proficient in</HeadingTertiary>
+            <li>bach</li>
+            <li>bach</li>
+            <li>bach</li>
+          </StackUL>
+          <StackUL>
+            <HeadingTertiary>Proficient in</HeadingTertiary>
+            <li>bach</li>
+            <li>bach</li>
+            <li>bach</li>
+          </StackUL>
+        </Skills>
         <CardSubHeading>Languages</CardSubHeading>
         <Description>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid

@@ -1,5 +1,6 @@
 const condidates = [
   {
+    id: "1",
     firstName: "Mourad",
     lastName: "Aouinat",
     role: "Front-end Web Developer",
