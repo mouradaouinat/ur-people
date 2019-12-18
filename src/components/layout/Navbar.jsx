@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import urPeople from "../../ur-people.svg";
 import dots from "../../dots.svg";
@@ -22,9 +23,9 @@ const NavBar = () => {
   return (
     <Container>
       <nav>
-        <a href="#!">
+        <Link to="/">
           <img src={urPeople} alt="ur people" />
-        </a>
+        </Link>
         <Button>
           <img src={dots} alt="ur people" />
         </Button>

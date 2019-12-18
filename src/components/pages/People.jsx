@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import urPeople from "../../ur-people.svg";
 import Condidate from "../Candidate";
@@ -51,11 +52,15 @@ const Banner = styled.div`
 `;
 
 const People = () => {
+  const [condidates, setcondidates] = useState([1, 2, 3, 4, 5, 6]);
+
   return (
     <Container>
       <Nav>
         <Logo>
-          <img src={urPeople} alt="UR People" />
+          <Link to="/">
+            <img src={urPeople} alt="UR People" />
+          </Link>
         </Logo>
         <Search>
           <input type="text" placeholder="Search candidate" />
@@ -65,9 +70,9 @@ const People = () => {
         <h1>All Condidates</h1>
       </Banner>
       <Condidates>
-        <Condidate></Condidate>
-        <Condidate></Condidate>
-        <Condidate></Condidate>
+        {condidates.map(condidate => (
+          <Condidate key={condidate} id={condidate}></Condidate>
+        ))}
       </Condidates>
     </Container>
   );

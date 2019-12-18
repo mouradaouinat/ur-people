@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import avatar from "../avatar.jpg";
 
@@ -31,11 +32,13 @@ const ParamList = styled.ul`
   }
 `;
 
-const Candidate = () => {
+const Candidate = ({ id }) => {
   return (
     <Container>
       <Image>
-        <img src={avatar} />
+        <Link to={`/profile/${id}`}>
+          <img src={avatar} />
+        </Link>
       </Image>
       <ParamList>
         <li>Copy link</li>
