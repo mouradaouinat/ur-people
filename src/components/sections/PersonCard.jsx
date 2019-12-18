@@ -124,22 +124,18 @@ const Skills = styled.div`
   }
 `;
 
-const PersonCard = () => (
+const PersonCard = ({ candidate }) => (
   <Wrapper>
     <NavBar></NavBar>
     <Card>
       <CardImage>
-        <img src={avatar} alt="profile" width="55" height="55" />
+        <img src={candidate.avatarImg} alt="profile" width="55" height="55" />
       </CardImage>
       <CardInfo>
-        <CardHeading>Mourad</CardHeading>
-        <CardHeading>Aouinat</CardHeading>
-        <TextMuted>Front-end web Developer</TextMuted>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          deleniti placeat illo distinctio dignissimos officiis dolorem corrupti
-          vero laudantium! Dignissimos recusandae.
-        </Description>
+        <CardHeading>{candidate.firstName}</CardHeading>
+        <CardHeading>{candidate.lastName}</CardHeading>
+        <TextMuted>{candidate.role}</TextMuted>
+        <Description>{candidate.bio}</Description>
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
           <Button href="#!">Resume.pdf</Button>
         </div>
@@ -147,27 +143,29 @@ const PersonCard = () => (
         <Skills>
           <StackUL>
             <HeadingTertiary>Experienced in</HeadingTertiary>
-            <li>bach</li>
-            <li>bach</li>
-            <li>bach</li>
+            {candidate.experience.map(exp => (
+              <li key={exp}>{exp}</li>
+            ))}
+          </StackUL>
+          <StackUL>
+            <HeadingTertiary>Familiar with</HeadingTertiary>
+            {candidate.familiarity.map(exp => (
+              <li key={exp}>{exp}</li>
+            ))}
           </StackUL>
           <StackUL>
             <HeadingTertiary>Proficient in</HeadingTertiary>
-            <li>bach</li>
-            <li>bach</li>
-            <li>bach</li>
-          </StackUL>
-          <StackUL>
-            <HeadingTertiary>Proficient in</HeadingTertiary>
-            <li>bach</li>
-            <li>bach</li>
-            <li>bach</li>
+            {candidate.profeciency.map(exp => (
+              <li key={exp}>{exp}</li>
+            ))}
           </StackUL>
         </Skills>
         <CardSubHeading>Languages</CardSubHeading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          deleniti placeat.
+          Professioinal working profenciency in{" "}
+          {candidate.languages.map(lang => (
+            <strong>{lang} </strong>
+          ))}
         </Description>
       </CardInfo>
     </Card>

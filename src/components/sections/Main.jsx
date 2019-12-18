@@ -32,12 +32,12 @@ const Container = styled.div`
   }
 `;
 
-const Main = () => {
+const Main = ({ candidate }) => {
   return (
     <Container>
       <Heading>General information</Heading>
       <SectionHeading title="Work information"></SectionHeading>
-      <WorkExperience></WorkExperience>
+      <WorkExperience candidate={candidate}></WorkExperience>
       {/* <SectionHeading title="Education"></SectionHeading> */}
       <Heading>united remote assessement</Heading>
       <HeadingDescription>

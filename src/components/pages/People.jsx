@@ -70,7 +70,6 @@ const Banner = styled.div`
 
 class People extends Component {
   handleDelete = id => {
-    console.log("deleted", id);
     const { deleteCandidate } = this.props;
     deleteCandidate(id);
   };

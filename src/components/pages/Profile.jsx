@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import PersonCard from "../sections/PersonCard.jsx";
 import Main from "../sections/Main.jsx";
 import styled from "styled-components";
 import Navigation from "../layout/Navigation.jsx";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 const Container = styled.div`
   display: flex;
@@ -14,12 +16,28 @@ const Container = styled.div`
   }
 `;
 
-const Profile = () => (
-  <Container>
-    <PersonCard></PersonCard>
-    <Main></Main>
-    <Navigation></Navigation>
-  </Container>
-);
+class Profile extends Component {
+  render() {
+    const { id } = this.props.match.params;
+    const { candidates } = this.props;
+    const candidate = candidates.find(candidate => candidate.id === id);
+    console.log(candidate);
+    return (
+      <Container>
+        <PersonCard candidate={candidate}></PersonCard>
+        <Main candidate={candidate}></Main>
+        <Navigation></Navigation>
+      </Container>
+    );
+  }
+}
 
-export default Profile;
+Profile.propTypes = {
+  candidates: PropTypes.array.isRequired
+};
+
+const mapStateToProps = state => ({
+  candidates: state.people.candidates
+});
+
+export default connect(mapStateToProps, null)(Profile);

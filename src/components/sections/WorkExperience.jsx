@@ -43,33 +43,22 @@ const Description = styled.p`
   font-size: 1.1rem;
 `;
 
-const WorkExperience = () => {
+const WorkExperience = ({ candidate }) => {
   return (
     <Container>
-      <WorkInfo>
-        <Title>VMware infrastructure manager</Title>
-        <SubTitle>knet</SubTitle>
-        <Splitter>
-          <p>something here</p>
-          <p>another here</p>
-        </Splitter>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint
-          qui accusamus numquam molestias incidunt iure
-        </Description>
-      </WorkInfo>
-      <WorkInfo>
-        <Title>VMware infrastructure manager</Title>
-        <SubTitle>knet</SubTitle>
-        <Splitter>
-          <p>something here</p>
-          <p>another here</p>
-        </Splitter>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint
-          qui accusamus numquam molestias incidunt iure
-        </Description>
-      </WorkInfo>
+      {candidate.workExperience.map(exp => (
+        <WorkInfo>
+          <Title>{exp.title}</Title>
+          <SubTitle>{exp.company}</SubTitle>
+          <Splitter>
+            <p>
+              {exp.start}-{exp.end}
+            </p>
+            <p>{exp.location}</p>
+          </Splitter>
+          <Description>{exp.description}</Description>
+        </WorkInfo>
+      ))}
     </Container>
   );
 };
