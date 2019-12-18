@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import urPeople from "../../ur-people.svg";
 import Condidate from "../Candidate";
+import candidateActions from "../../redux/actions/candidateActions";
 
 const Container = styled.div`
   max-width: 1000px;
@@ -11,7 +13,7 @@ const Container = styled.div`
   margin-top: 3rem;
 
   @media only screen and (max-width: 600px) {
-    max-width: 590px;
+    max-width: 350px;
     text-align: center;
   }
 `;
@@ -67,6 +69,12 @@ const Banner = styled.div`
 `;
 
 class People extends Component {
+  handleDelete = id => {
+    console.log("deleted", id);
+    const { deleteCandidate } = this.props;
+    deleteCandidate(id);
+  };
+
   render() {
     const { candidates } = this.props;
     return (
@@ -90,6 +98,7 @@ class People extends Component {
               key={candidate.id}
               id={candidate.id}
               avatar={candidate.avatarImg}
+              onDelete={this.handleDelete}
             ></Condidate>
           ))}
         </Condidates>
@@ -98,8 +107,19 @@ class People extends Component {
   }
 }
 
+People.propTypes = {
+  candidates: PropTypes.array.isRequired,
+  deleteCandidate: PropTypes.func.isRequired
+};
+
 const mapStateToProps = state => ({
   candidates: state.people.candidates
 });
 
-export default connect(mapStateToProps, null)(People);
+const mapDispatchToProps = dispatch => ({
+  deleteCandidate: id => {
+    dispatch(candidateActions.deleteCandidate(id));
+  }
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(People);

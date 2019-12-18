@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Profile from "./components/pages/Profile.jsx";
 import People from "./components/pages/People.jsx";
 import styled from "styled-components";
+import "font-awesome/css/font-awesome.css";
 import "./App.css";
 
 const Container = styled.div`

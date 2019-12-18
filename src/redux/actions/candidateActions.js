@@ -1,8 +1,12 @@
-import DELETE_CANDIDATE from "./types";
+import { DELETE_CANDIDATE } from "./types";
 
-export const deleteCandidate = id => {
+const deleteCandidate = id => {
   return {
     type: DELETE_CANDIDATE,
     payload: id
   };
+};
+
+export default {
+  deleteCandidate
 };
