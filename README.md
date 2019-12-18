@@ -1,8 +1,7 @@
 ### UR People In office coding Challenge
 
 To clone the project to your machine run:
-
-## `git clone https://github.com/mouradaouinat/ur-people.git`
+`git clone https://github.com/mouradaouinat/ur-people.git`
 
 ## Available Scripts
 
