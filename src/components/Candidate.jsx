@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import avatar from "../avatar.jpg";
 
 const Container = styled.div`
   display: flex;
@@ -37,12 +36,12 @@ const ParamList = styled.ul`
   }
 `;
 
-const Candidate = ({ id }) => {
+const Candidate = ({ id, avatar }) => {
   return (
     <Container>
       <Image>
         <Link to={`/profile/${id}`}>
-          <img src={avatar} />
+          <img src={avatar} alt={avatar} />
         </Link>
       </Image>
       <ParamList>

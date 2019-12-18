@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import styled from "styled-components";
 import urPeople from "../../ur-people.svg";
 import Condidate from "../Candidate";
@@ -65,31 +66,40 @@ const Banner = styled.div`
   }
 `;
 
-const People = () => {
-  const [condidates, setcondidates] = useState([1]);
+class People extends Component {
+  render() {
+    const { candidates } = this.props;
+    return (
+      <Container>
+        <Nav>
+          <Logo>
+            <Link to="/">
+              <img src={urPeople} alt="UR People" />
+            </Link>
+          </Logo>
+          <Search>
+            <input type="text" placeholder="Search candidate" />
+          </Search>
+        </Nav>
+        <Banner>
+          <h1>All Condidates</h1>
+        </Banner>
+        <Condidates>
+          {candidates.map(candidate => (
+            <Condidate
+              key={candidate.id}
+              id={candidate.id}
+              avatar={candidate.avatarImg}
+            ></Condidate>
+          ))}
+        </Condidates>
+      </Container>
+    );
+  }
+}
 
-  return (
-    <Container>
-      <Nav>
-        <Logo>
-          <Link to="/">
-            <img src={urPeople} alt="UR People" />
-          </Link>
-        </Logo>
-        <Search>
-          <input type="text" placeholder="Search candidate" />
-        </Search>
-      </Nav>
-      <Banner>
-        <h1>All Condidates</h1>
-      </Banner>
-      <Condidates>
-        {condidates.map(condidate => (
-          <Condidate key={condidate} id={condidate}></Condidate>
-        ))}
-      </Condidates>
-    </Container>
-  );
-};
+const mapStateToProps = state => ({
+  candidates: state.people.candidates
+});
 
-export default People;
+export default connect(mapStateToProps, null)(People);
