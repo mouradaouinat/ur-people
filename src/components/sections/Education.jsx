@@ -10,18 +10,14 @@ import {
 const Education = ({ candidate }) => {
   return (
     <Timeline>
-      <Content>
-        <ContentYear year="2018" />
-        <ContentBody title="Amazing Title">
-          <Description text="I'm an amazing event" />
-        </ContentBody>
-      </Content>
-      <Content>
-        <ContentYear year="2018" />
-        <ContentBody title="Amazing Title">
-          <Description text="I'm an amazing event" />
-        </ContentBody>
-      </Content>
+      {candidate.education.map(edu => (
+        <Content key={edu.school}>
+          <ContentYear year={`${edu.start} - ${edu.end}`} />
+          <ContentBody title={edu.title}>
+            <Description text={edu.school} />
+          </ContentBody>
+        </Content>
+      ))}
     </Timeline>
   );
 };

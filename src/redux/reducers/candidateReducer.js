@@ -28,16 +28,22 @@ const initialState = {
       ],
       education: [
         {
-          year: "2016",
-          end: "2017",
-          title: "Bachalor",
-          school: "Ibn Tofail"
+          start: "2015",
+          end: "2016",
+          title: "SUPINFO International Univercity",
+          school: "M.Sc. in Computer Science"
         },
         {
-          year: "2016",
-          end: "2017",
-          title: "Bachalor",
-          school: "Ibn Tofail"
+          start: "2012",
+          end: "2014",
+          title: "IGA Morocco",
+          school: "IGA Morocco"
+        },
+        {
+          start: "2009",
+          end: "2012",
+          title: "SUPINFO International Univercity",
+          school: "B.A in Computer Science"
         }
       ]
     },
@@ -78,16 +84,16 @@ const initialState = {
       ],
       education: [
         {
-          year: "2016",
-          end: "2017",
-          title: "Bachalor",
-          school: "Ibn Tofail"
+          start: "2018",
+          end: "2019",
+          title: "Ibn Tofail Univercity",
+          school: "Financial Management"
         },
         {
-          year: "2016",
-          end: "2017",
-          title: "Bachalor",
-          school: "Ibn Tofail"
+          start: "2013",
+          end: "2014",
+          title: "Lycee Idriss Premier",
+          school: "Baccaloreat in economics"
         }
       ]
     }
