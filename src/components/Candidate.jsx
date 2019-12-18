@@ -7,9 +7,13 @@ const Container = styled.div`
   justify-content: left;
   width: 50rem;
   margin-bottom: 4rem;
+  border-radius: 0.8rem;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 40rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   }
 `;
 

@@ -86,7 +86,7 @@ const initialState = {
         {
           start: "2018",
           end: "2019",
-          title: "Ibn Tofail Univercity",
+          title: "Ibn Tofail University",
           school: "Financial Management"
         },
         {
