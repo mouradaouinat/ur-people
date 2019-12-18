@@ -4,7 +4,7 @@ const condidates = [
     firstName: "Mourad",
     lastName: "Aouinat",
     role: "Front-end Web Developer",
-    avatarImg: "",
+    avatarImg: "//gravatar.com/avatar/5fd5dab1983b6b4f01d95a3cc563fada?s=200",
     bio:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti placeat illo distinctio dignissimos officiis dolorem corrupti vero laudantium! Dignissimos recusandae.",
     resumeURL: "https://www.google.com",
@@ -15,7 +15,8 @@ const condidates = [
         title: "Front-End web developer",
         company: "United Remote",
         location: "Rabat",
-        year: "2019",
+        start: "2019",
+        end: "2020",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti placeat illo distinctio dignissimos officiis dolorem corrupti vero laudantium! Dignissimos recusandae."
       },

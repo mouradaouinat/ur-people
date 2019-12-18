@@ -1,0 +1,1 @@
+export const DELETE_CANDIDATE = "DELETE_CANDIDATE";
