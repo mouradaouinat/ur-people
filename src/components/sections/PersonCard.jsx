@@ -11,7 +11,7 @@ const Card = styled.div`
   @media only screen and (max-width: 600px) {
     background: #fff;
     border-radius: 0.5rem;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 10px rgba(96, 80, 220, 0.1);
   }
 `;
 
@@ -95,7 +95,7 @@ const Button = styled.a`
   }
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(96, 80, 220, 0.1);
   }
 `;
 
@@ -106,7 +106,7 @@ const StackUL = styled.ul`
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0.3rem 1rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(96, 80, 220, 0.1);
     color: #6050dc;
     border-radius: 3px;
   }

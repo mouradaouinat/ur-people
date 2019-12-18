@@ -24,7 +24,7 @@ const NavBar = () => {
     <Container>
       <nav>
         <Link to="/">
-          <img src={urPeople} alt="ur people" />
+          <img src={urPeople} alt="ur people" style={{ marginTop: ".6rem" }} />
         </Link>
         <Button>
           <img src={dots} alt="ur people" />

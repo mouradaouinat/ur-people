@@ -66,7 +66,7 @@ const EvaluationList = styled.ul`
     }
 
     &:hover {
-      background-color: rgba(200, 200, 200, 0.3);
+      background-color: rgba(96, 80, 220, 0.1);
     }
   }
 `;
@@ -77,15 +77,21 @@ const CodingChallenge = () => {
       <Container>
         <Card>
           <CardTitle>Reposotory Requirement</CardTitle>
-          <CardLink href="#!">web-coding-challenge</CardLink>
+          <CardLink href="#!">
+            web-coding-challenge <i className="fa fa-external-link"></i>
+          </CardLink>
         </Card>
         <Card>
           <CardTitle>Reposotory Requirement</CardTitle>
-          <CardLink href="#!">web-coding-challenge</CardLink>
+          <CardLink href="#!">
+            web-coding-challenge <i className="fa fa-external-link"></i>
+          </CardLink>
         </Card>
         <Card>
           <CardTitle>Reposotory Requirement</CardTitle>
-          <CardLink href="#!">web-coding-challenge</CardLink>
+          <CardLink href="#!">
+            web-coding-challenge <i className="fa fa-external-link"></i>
+          </CardLink>
         </Card>
       </Container>
       <EvaluationCard>
