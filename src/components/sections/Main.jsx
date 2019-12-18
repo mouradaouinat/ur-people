@@ -4,6 +4,7 @@ import SectionHeading from "../layout/SectionHeading.jsx";
 import styled from "styled-components";
 import CodingChallenge from "./CodingChallenge.jsx";
 import TeamFeedback from "./TeamFeedback.jsx";
+import Education from "./Education";
 
 const Heading = styled.h1`
   text-transform: uppercase;
@@ -38,7 +39,8 @@ const Main = ({ candidate }) => {
       <Heading>General information</Heading>
       <SectionHeading title="Work information"></SectionHeading>
       <WorkExperience candidate={candidate}></WorkExperience>
-      {/* <SectionHeading title="Education"></SectionHeading> */}
+      <SectionHeading title="Education"></SectionHeading>
+      <Education></Education>
       <Heading>united remote assessement</Heading>
       <HeadingDescription>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis

@@ -9,7 +9,7 @@ const initialState = {
       avatarImg:
         "https://ca.slack-edge.com/T02QFPDEX-UREJMDJAD-233015db6a1d-512",
       bio:
-        "bachelor in financial management from the university of Ibn Tofail looking for an Internship or a job opportunity in finance or accounting. Organized and dedicated individual with a mind for numbers and passion for financial theory, Also a coding hobbyist looking to bridge the two. ",
+        "bachelor in financial management from the university of Ibn Tofail. Organized and dedicated individual with a mind for numbers and passion for financial theory, Also a coding hobbyist looking to bridge the two. ",
       resumeURL: "https://www.linkedin.com/in/mourad-aouinat-981912133/",
       experience: ["html", "css", "JavaScript", "React"],
       familiarity: ["python", "PHP"],

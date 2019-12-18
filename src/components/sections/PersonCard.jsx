@@ -137,7 +137,9 @@ const PersonCard = ({ candidate }) => (
         <TextMuted>{candidate.role}</TextMuted>
         <Description>{candidate.bio}</Description>
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-          <Button href="#!">Resume.pdf</Button>
+          <Button href={candidate.resumeURL} target="_blank">
+            <i className="fa fa-file-o"></i> Resume.pdf
+          </Button>
         </div>
         <CardSubHeading>Tech Stack</CardSubHeading>
         <Skills>
