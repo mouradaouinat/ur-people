@@ -40,7 +40,7 @@ const Main = ({ candidate }) => {
       <SectionHeading title="Work information"></SectionHeading>
       <WorkExperience candidate={candidate}></WorkExperience>
       <SectionHeading title="Education"></SectionHeading>
-      <Education></Education>
+      <Education candidate={candidate}></Education>
       <Heading>united remote assessement</Heading>
       <HeadingDescription>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis

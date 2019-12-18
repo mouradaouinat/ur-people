@@ -21,17 +21,23 @@ const initialState = {
           company: "United Remote",
           location: "Rabat",
           start: "2019",
-          end: "2020",
+          end: "2019",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti placeat illo distinctio dignissimos officiis dolorem corrupti vero laudantium! Dignissimos recusandae."
+        }
+      ],
+      education: [
+        {
+          year: "2016",
+          end: "2017",
+          title: "Bachalor",
+          school: "Ibn Tofail"
         },
         {
-          title: "Front-End web developer",
-          company: "United Remote",
-          location: "Rabat",
-          year: "2019",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti placeat illo distinctio dignissimos officiis dolorem corrupti vero laudantium! Dignissimos recusandae."
+          year: "2016",
+          end: "2017",
+          title: "Bachalor",
+          school: "Ibn Tofail"
         }
       ]
     },
@@ -68,6 +74,20 @@ const initialState = {
           end: "2020",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti placeat illo distinctio dignissimos officiis dolorem corrupti vero laudantium! Dignissimos recusandae."
+        }
+      ],
+      education: [
+        {
+          year: "2016",
+          end: "2017",
+          title: "Bachalor",
+          school: "Ibn Tofail"
+        },
+        {
+          year: "2016",
+          end: "2017",
+          title: "Bachalor",
+          school: "Ibn Tofail"
         }
       ]
     }

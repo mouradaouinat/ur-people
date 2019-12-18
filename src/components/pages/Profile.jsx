@@ -21,7 +21,6 @@ class Profile extends Component {
     const { id } = this.props.match.params;
     const { candidates } = this.props;
     const candidate = candidates.find(candidate => candidate.id === id);
-    console.log(candidate);
     return (
       <Container>
         <PersonCard candidate={candidate}></PersonCard>

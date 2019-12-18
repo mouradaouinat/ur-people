@@ -12,3 +12,24 @@ body {
 html {
   font-size: 62.5%;
 }
+
+.timeline__container__body::before {
+  background-color: #6050dc;
+}
+
+.timeline__container__year::after {
+  background-color: #6050dc;
+}
+
+.timeline__container__year__item {
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.timeline__container__body__title {
+  font-size: 1.6rem;
+}
+
+.timeline__container__body__description__text {
+  color: #777;
+}

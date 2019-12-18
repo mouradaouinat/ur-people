@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import avatar from "../../avatar.jpg";
 import NavBar from "../layout/Navbar.jsx";
 
 const Card = styled.div`
@@ -166,7 +165,7 @@ const PersonCard = ({ candidate }) => (
         <Description>
           Professioinal working profenciency in{" "}
           {candidate.languages.map(lang => (
-            <strong>{lang} </strong>
+            <strong key={lang}>{lang} </strong>
           ))}
         </Description>
       </CardInfo>

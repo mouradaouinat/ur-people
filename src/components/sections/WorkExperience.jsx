@@ -47,14 +47,16 @@ const WorkExperience = ({ candidate }) => {
   return (
     <Container>
       {candidate.workExperience.map(exp => (
-        <WorkInfo>
+        <WorkInfo key={exp.title}>
           <Title>{exp.title}</Title>
           <SubTitle>{exp.company}</SubTitle>
           <Splitter>
             <p>
-              {exp.start}-{exp.end}
+              {exp.start} - {exp.end}
             </p>
-            <p>{exp.location}</p>
+            <p>
+              <i className="fa fa-location-arrow"></i> {exp.location}
+            </p>
           </Splitter>
           <Description>{exp.description}</Description>
         </WorkInfo>
