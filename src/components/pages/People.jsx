@@ -89,7 +89,7 @@ class People extends Component {
           </Search>
         </Nav>
         <Banner>
-          <h1>All Condidates</h1>
+          <h1>All Candidates</h1>
         </Banner>
         <Condidates>
           {candidates.map(candidate => (
