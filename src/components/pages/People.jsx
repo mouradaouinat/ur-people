@@ -66,7 +66,7 @@ const Banner = styled.div`
 `;
 
 const People = () => {
-  const [condidates, setcondidates] = useState([1, 2, 3, 4, 5, 6]);
+  const [condidates, setcondidates] = useState([1]);
 
   return (
     <Container>

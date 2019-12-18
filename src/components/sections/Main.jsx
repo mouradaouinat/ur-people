@@ -38,7 +38,7 @@ const Main = () => {
       <Heading>General information</Heading>
       <SectionHeading title="Work information"></SectionHeading>
       <WorkExperience></WorkExperience>
-      <SectionHeading title="Education"></SectionHeading>
+      {/* <SectionHeading title="Education"></SectionHeading> */}
       <Heading>united remote assessement</Heading>
       <HeadingDescription>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis

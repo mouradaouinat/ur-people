@@ -18,6 +18,11 @@ const Image = styled.div`
   img {
     height: 25rem;
     width: 25rem;
+
+    @media only screen and (max-width: 600px) {
+      height: 20rem;
+      width: 20rem;
+    }
   }
 `;
 
