@@ -5,6 +5,7 @@ import styled from "styled-components";
 import CodingChallenge from "./CodingChallenge.jsx";
 import TeamFeedback from "./TeamFeedback.jsx";
 import Education from "./Education";
+import Expectations from "./Expectations";
 
 const Heading = styled.h1`
   text-transform: uppercase;
@@ -54,6 +55,7 @@ const Main = ({ candidate }) => {
       <CodingChallenge></CodingChallenge>
       <SectionHeading title="Team Feedback"></SectionHeading>
       <TeamFeedback></TeamFeedback>
+      <Expectations></Expectations>
     </Container>
   );
 };
