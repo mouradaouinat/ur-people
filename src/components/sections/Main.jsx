@@ -55,7 +55,7 @@ const Main = ({ candidate }) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
         quaerat sunt autem illum maxime repellendus optio
       </HeadingDescription>
-      <CodingChallenge></CodingChallenge>
+      <CodingChallenge candidate={candidate}></CodingChallenge>
       <SectionHeading title="Team Feedback"></SectionHeading>
       <TeamFeedback></TeamFeedback>
       <Heading>Bootcamp assessement</Heading>

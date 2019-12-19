@@ -80,7 +80,8 @@ const Rating = styled.span`
   margin-right: 0.5rem;
 `;
 
-const CodingChallenge = () => {
+const CodingChallenge = ({ candidate }) => {
+  const { evaluation } = candidate;
   return (
     <section>
       <Container>
@@ -109,51 +110,53 @@ const CodingChallenge = () => {
           <li>
             Respect for requirement{" "}
             <Rating>
-              Yes{" "}
+              {evaluation.requirement.verdict}{" "}
               <span role="img" aria-label="emoji">
-                👍
+                {evaluation.requirement.emoji}
               </span>
             </Rating>
           </li>
           <li>
             Git best Practices{" "}
             <Rating>
-              Strong Yes{" "}
+              {evaluation.git.verdict}{" "}
               <span role="img" aria-label="emoji">
-                👍👍
+                {evaluation.git.emoji}
               </span>
             </Rating>
           </li>
           <li>
             Error handling{" "}
             <Rating>
-              Not Sure{" "}
+              {evaluation.error.verdict}{" "}
               <span role="img" aria-label="emoji">
-                🤷‍♂️
+                {evaluation.error.emoji}
               </span>
             </Rating>
           </li>
           <li>
             Code readability{" "}
             <Rating>
-              Yes <span role="img" aria-label="emoji"></span>👍
+              {evaluation.code.verdict}{" "}
+              <span role="img" aria-label="emoji"></span>
+              {evaluation.code.emoji}
             </Rating>
           </li>
           <li>
             Project Folder Structure{" "}
             <Rating>
-              Not Sure{" "}
+              {evaluation.folder.verdict}{" "}
               <span role="img" aria-label="emoji">
-                🤷‍♂️
+                {evaluation.folder.emoji}
               </span>
             </Rating>
           </li>
           <li>
-            Project Folder Structure{" "}
+            Project Documentation{" "}
             <Rating>
-              Strong Yes{" "}
+              {evaluation.documentation.verdict}{" "}
               <span role="img" aria-label="emoji">
-                👍👍
+                {evaluation.documentation.emoji}
               </span>
             </Rating>
           </li>

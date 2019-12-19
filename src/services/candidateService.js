@@ -120,6 +120,32 @@ export const candidates = [
         "November",
         "December"
       ]
+    },
+    evaluation: {
+      requirement: {
+        verdict: "yes",
+        emoji: "👍"
+      },
+      git: {
+        verdict: "strong yes",
+        emoji: "👍👍"
+      },
+      error: {
+        verdict: "not sure",
+        emoji: "🤷‍♂️"
+      },
+      code: {
+        verdict: "strong yes",
+        emoji: "👍👍"
+      },
+      folder: {
+        verdict: "yes",
+        emoji: "👍"
+      },
+      documentation: {
+        verdict: "no",
+        emoji: "👎"
+      }
     }
   },
   {
@@ -247,6 +273,32 @@ export const candidates = [
         "November",
         "December"
       ]
+    },
+    evaluation: {
+      requirement: {
+        verdict: "yes",
+        emoji: "👍"
+      },
+      git: {
+        verdict: "strong yes",
+        emoji: "👍👍"
+      },
+      error: {
+        verdict: "not sure",
+        emoji: "🤷‍♂️"
+      },
+      code: {
+        verdict: "no",
+        emoji: "👎"
+      },
+      folder: {
+        verdict: "yes",
+        emoji: "👍"
+      },
+      documentation: {
+        verdict: "not sure",
+        emoji: "🤷‍♂️ "
+      }
     }
   }
 ];
