@@ -8,6 +8,7 @@ const Container = styled.div`
   margin-top: 3rem;
   position: relative;
   margin-bottom: 3rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 `;
 
 const ContentHeading = styled.div`
@@ -51,7 +52,7 @@ const TeamFeedback = () => (
       </div>
       <div>
         <h3>Yassine El Kechachi</h3>
-        <span>Talent aquisition</span>
+        <span>Talent Aquisition</span>
       </div>
       <Rating>
         Yes{" "}
