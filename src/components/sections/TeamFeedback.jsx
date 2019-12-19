@@ -51,7 +51,7 @@ const TeamFeedback = () => (
         />
       </div>
       <div>
-        <h3>Yassine El Kechachi</h3>
+        <h3>Yassine Kachchani</h3>
         <span>Talent Aquisition</span>
       </div>
       <Rating>
