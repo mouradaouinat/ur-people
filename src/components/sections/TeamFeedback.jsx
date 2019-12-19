@@ -6,8 +6,66 @@ const Container = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 3rem;
+  position: relative;
+  margin-bottom: 3rem;
 `;
 
-const TeamFeedback = () => <Container></Container>;
+const ContentHeading = styled.div`
+  display: flex;
+  margin-bottom: 1.5rem;
+  img {
+    border-radius: 100px;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const FeedBack = styled.p`
+  margin-bottom: 1rem;
+`;
+
+const Rating = styled.span`
+  padding: 0.3rem;
+  background-color: rgba(96, 80, 220, 0.1);
+  color: #6050dc;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  margin-right: 0.5rem;
+`;
+
+const TeamFeedback = () => (
+  <Container>
+    <ContentHeading>
+      <div>
+        <img
+          src="https://ca.slack-edge.com/T02QFPDEX-U02QFPDEZ-81d30bcde900-512"
+          alt="Owner of UR"
+        />
+      </div>
+      <div>
+        <h3>Yassine El Kechachi</h3>
+        <span>Talent aquisition</span>
+      </div>
+      <Rating>
+        Yes{" "}
+        <span role="img" aria-label="emoji">
+          👍
+        </span>
+      </Rating>
+    </ContentHeading>
+    <FeedBack>
+      Has proven ability to produce creative, original ideas, plans, products or
+      methods even if they’re not always practical, in line with organization
+      needs, or successful. - Passion - Culture fit - Communication - Collab
+    </FeedBack>
+  </Container>
+);
 
 export default TeamFeedback;
