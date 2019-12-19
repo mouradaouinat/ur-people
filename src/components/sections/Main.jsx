@@ -58,6 +58,16 @@ const Main = ({ candidate }) => {
       <CodingChallenge></CodingChallenge>
       {/* <SectionHeading title="Team Feedback"></SectionHeading>
       <TeamFeedback></TeamFeedback> */}
+      <Heading>Bootcamp assessement</Heading>
+      <HeadingDescription>
+        Every season, there’s always a new must-have (or at least must try)
+        beauty product that comes out — the newest color palette in make-up, the
+        latest in skin care, new scents, etc., etc. Beauty junkies know not to
+        resist these temptations because you never know what amazing new product
+        you might find. Even when people say beauty is skin deep and it’s what’s
+        inside that matters it is always easier to make people listen to what
+        you have to say when you come in a good “package”.
+      </HeadingDescription>
       <SectionHeading title="Progress"></SectionHeading>
       <Progress></Progress>
       <SectionHeading title="Worked On"></SectionHeading>

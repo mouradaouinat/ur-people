@@ -5,7 +5,7 @@ const Progress = () => {
   const data = {
     datasets: [
       {
-        borderColor: "blue",
+        borderColor: "#F5A623",
         lineTension: 0.4,
         data: [
           "30",
@@ -25,7 +25,7 @@ const Progress = () => {
         fill: false
       },
       {
-        borderColor: "purple",
+        borderColor: "#7ED321",
         lineTension: 0.4,
         data: [
           "20",
@@ -45,7 +45,7 @@ const Progress = () => {
         fill: false
       },
       {
-        borderColor: "green",
+        borderColor: "#8B572A",
         lineTension: 0.4,
         data: [
           "13",
@@ -83,7 +83,7 @@ const Progress = () => {
 
   return (
     <div style={{ marginTop: "2rem" }}>
-      <Line data={data}></Line>
+      <Line data={data} height={200}></Line>
     </div>
   );
 };

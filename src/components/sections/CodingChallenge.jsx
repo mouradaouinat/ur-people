@@ -40,6 +40,7 @@ const EvaluationCard = styled.div`
   padding-top: 1rem;
   overflow: hidden;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
 `;
 
 const MiniHeading = styled.h5`
