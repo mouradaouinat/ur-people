@@ -90,13 +90,13 @@ const CodingChallenge = () => {
           </CardLink>
         </Card>
         <Card>
-          <CardTitle>Reposotory Requirement</CardTitle>
+          <CardTitle>Submissions</CardTitle>
           <CardLink href="#!">
             web-coding-challenge <i className="fa fa-external-link"></i>
           </CardLink>
         </Card>
         <Card>
-          <CardTitle>Reposotory Requirement</CardTitle>
+          <CardTitle>Live Demo</CardTitle>
           <CardLink href="#!">
             web-coding-challenge <i className="fa fa-external-link"></i>
           </CardLink>

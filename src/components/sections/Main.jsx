@@ -8,6 +8,7 @@ import Education from "./Education";
 import Expectations from "./Expectations";
 import Courses from "./Courses.jsx";
 import WorkedOn from "./WorkedOn.jsx";
+import Progress from "./Progress.jsx";
 
 const Heading = styled.h1`
   text-transform: uppercase;
@@ -57,6 +58,9 @@ const Main = ({ candidate }) => {
       <CodingChallenge></CodingChallenge>
       {/* <SectionHeading title="Team Feedback"></SectionHeading>
       <TeamFeedback></TeamFeedback> */}
+      <SectionHeading title="Progress"></SectionHeading>
+      <Progress></Progress>
+      <SectionHeading title="Worked On"></SectionHeading>
       <WorkedOn></WorkedOn>
       <SectionHeading title="Courses"></SectionHeading>
       <Courses></Courses>
