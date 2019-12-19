@@ -71,6 +71,14 @@ const EvaluationList = styled.ul`
   }
 `;
 
+const Rating = styled.span`
+  padding: 0.3rem;
+  /* background-color: rgba(96, 80, 220, 0.1);
+  color: #6050dc; */
+  float: right;
+  margin-right: 0.5rem;
+`;
+
 const CodingChallenge = () => {
   return (
     <section>
@@ -97,12 +105,57 @@ const CodingChallenge = () => {
       <EvaluationCard>
         <MiniHeading>Our Evaluation</MiniHeading>
         <EvaluationList>
-          <li>Respect for requirement</li>
-          <li>Git best Practices</li>
-          <li>Error handling</li>
-          <li>Code readability</li>
-          <li>Project Folder Structure</li>
-          <li>Project Folder Structure</li>
+          <li>
+            Respect for requirement{" "}
+            <Rating>
+              Yes{" "}
+              <span role="img" aria-label="emoji">
+                👍
+              </span>
+            </Rating>
+          </li>
+          <li>
+            Git best Practices{" "}
+            <Rating>
+              Strong Yes{" "}
+              <span role="img" aria-label="emoji">
+                👍👍
+              </span>
+            </Rating>
+          </li>
+          <li>
+            Error handling{" "}
+            <Rating>
+              Not Sure{" "}
+              <span role="img" aria-label="emoji">
+                🤷‍♂️
+              </span>
+            </Rating>
+          </li>
+          <li>
+            Code readability{" "}
+            <Rating>
+              Yes <span role="img" aria-label="emoji"></span>👍
+            </Rating>
+          </li>
+          <li>
+            Project Folder Structure{" "}
+            <Rating>
+              Not Sure{" "}
+              <span role="img" aria-label="emoji">
+                🤷‍♂️
+              </span>
+            </Rating>
+          </li>
+          <li>
+            Project Folder Structure{" "}
+            <Rating>
+              Strong Yes{" "}
+              <span role="img" aria-label="emoji">
+                👍👍
+              </span>
+            </Rating>
+          </li>
         </EvaluationList>
       </EvaluationCard>
     </section>

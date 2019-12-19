@@ -109,6 +109,10 @@ const StackUL = styled.ul`
     background-color: rgba(96, 80, 220, 0.1);
     color: #6050dc;
     border-radius: 3px;
+
+    @media only screen and (max-width: 600px) {
+      display: block;
+    }
   }
 `;
 
