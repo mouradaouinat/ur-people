@@ -60,7 +60,7 @@ const Button = styled.button`
     `}
 `;
 
-const Candidate = ({ id, avatar, onDelete }) => {
+const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
   return (
     <Container>
       <Image>
@@ -80,7 +80,7 @@ const Candidate = ({ id, avatar, onDelete }) => {
           </Button>
         </li>
         <li>
-          <Button>
+          <Button onClick={() => onDuplicate(id)}>
             <i className="fa fa-clone"></i> Duplicate
           </Button>
         </li>

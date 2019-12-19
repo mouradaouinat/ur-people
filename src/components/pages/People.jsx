@@ -78,6 +78,11 @@ class People extends Component {
     deleteCandidate(id);
   };
 
+  handleDuplicate = id => {
+    const { duplicateCandidate } = this.props;
+    duplicateCandidate(id);
+  };
+
   render() {
     const { candidates } = this.props;
     return (
@@ -102,6 +107,7 @@ class People extends Component {
               id={candidate.id}
               avatar={candidate.avatarImg}
               onDelete={this.handleDelete}
+              onDuplicate={this.handleDuplicate}
             ></Condidate>
           ))}
         </Condidates>
@@ -112,7 +118,8 @@ class People extends Component {
 
 People.propTypes = {
   candidates: PropTypes.array.isRequired,
-  deleteCandidate: PropTypes.func.isRequired
+  deleteCandidate: PropTypes.func.isRequired,
+  duplicateCandidate: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
@@ -122,6 +129,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   deleteCandidate: id => {
     dispatch(candidateActions.deleteCandidate(id));
+  },
+  duplicateCandidate: id => {
+    dispatch(candidateActions.duplicateCandidate(id));
   }
 });
 
