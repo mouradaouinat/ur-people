@@ -64,9 +64,7 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
   return (
     <Container>
       <Image>
-        <Link to={`/profile/${id}`}>
-          <img src={avatar} alt={avatar} />
-        </Link>
+        <img src={avatar} alt={avatar} />
       </Image>
       <ParamList>
         <li>
@@ -75,9 +73,9 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
           </Button>
         </li>
         <li>
-          <Button>
-            <i className="fa fa-pencil-square-o"></i> Edit
-          </Button>
+          <Link className="view-link" to={`/profile/${id}`}>
+            <i className="fa fa-eye"></i> View
+          </Link>
         </li>
         <li>
           <Button onClick={() => onDuplicate(id)}>
@@ -85,7 +83,7 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
           </Button>
         </li>
         <li>
-          <Button red onClick={() => onDelete(id)}>
+          <Button style={{ color: "#ff1a1a" }} onClick={() => onDelete(id)}>
             <i className="fa fa-trash-o"></i> Delete
           </Button>
         </li>

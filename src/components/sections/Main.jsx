@@ -69,7 +69,7 @@ const Main = ({ candidate }) => {
         you have to say when you come in a good “package”.
       </HeadingDescription>
       <SectionHeading title="Progress"></SectionHeading>
-      <Progress></Progress>
+      <Progress candidate={candidate}></Progress>
       <SectionHeading title="Worked On"></SectionHeading>
       <WorkedOn></WorkedOn>
       <SectionHeading title="Courses"></SectionHeading>
