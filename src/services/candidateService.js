@@ -146,7 +146,42 @@ export const candidates = [
         verdict: "no",
         emoji: "👎"
       }
-    }
+    },
+    feedback: [
+      {
+        reviewer: "Yassine Kachchani",
+        role: "CEO and Founder",
+        image: "https://ca.slack-edge.com/T02QFPDEX-U02QFPDEZ-81d30bcde900-512",
+        review:
+          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+        rating: {
+          verdict: "yes",
+          emoji: "👍"
+        }
+      },
+      {
+        reviewer: "Zack Braska",
+        role: "Head of Engineering",
+        image: "https://ca.slack-edge.com/T02QFPDEX-U0F3ZM26M-8bb4a417dc1d-512",
+        review:
+          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+        rating: {
+          verdict: "strong yes",
+          emoji: "👍👍"
+        }
+      },
+      {
+        reviewer: "Adil Haizoune",
+        role: "CTO and Founder",
+        image: "https://ca.slack-edge.com/T02QFPDEX-U02QFPF6D-474149b77635-512",
+        review:
+          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+        rating: {
+          verdict: "no",
+          emoji: "👎"
+        }
+      }
+    ]
   },
   {
     id: "2",
@@ -299,6 +334,30 @@ export const candidates = [
         verdict: "not sure",
         emoji: "🤷‍♂️ "
       }
-    }
+    },
+    feedback: [
+      {
+        reviewer: "Zack Braska",
+        role: "Head of Engineering",
+        image: "https://ca.slack-edge.com/T02QFPDEX-U0F3ZM26M-8bb4a417dc1d-512",
+        review:
+          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+        rating: {
+          verdict: "yes",
+          emoji: "👍"
+        }
+      },
+      {
+        reviewer: "Serrah Menif",
+        role: "Talent Acquisition",
+        image: "https://ca.slack-edge.com/T02QFPDEX-U5LLG9H7S-2161263a68c8-512",
+        review:
+          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+        rating: {
+          verdict: "not sure",
+          emoji: "🤷‍♂️ "
+        }
+      }
+    ]
   }
 ];

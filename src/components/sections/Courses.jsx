@@ -59,7 +59,7 @@ const CourseContent = styled.div`
 
 const Courses = () => {
   return (
-    <Wrapper>
+    <Wrapper id="courses">
       <Tabs>
         <Tab>Product</Tab>
         <Tab>Communication</Tab>

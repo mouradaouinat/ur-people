@@ -57,7 +57,7 @@ const Main = ({ candidate }) => {
       </HeadingDescription>
       <CodingChallenge candidate={candidate}></CodingChallenge>
       <SectionHeading title="Team Feedback"></SectionHeading>
-      <TeamFeedback></TeamFeedback>
+      <TeamFeedback candidate={candidate}></TeamFeedback>
       <Heading>Bootcamp assessement</Heading>
       <HeadingDescription>
         Every season, there’s always a new must-have (or at least must try)

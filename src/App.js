@@ -4,6 +4,7 @@ import People from "./components/pages/People.jsx";
 import styled from "styled-components";
 import "font-awesome/css/font-awesome.css";
 import "./App.css";
+import Loader from "./components/layout/Loader";
 const Profile = lazy(() => import("./components/pages/Profile.jsx"));
 
 const Container = styled.div`
@@ -12,7 +13,7 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Suspense fallback={<h1>loading...</h1>}>
+    <Suspense fallback={<Loader></Loader>}>
       <Container>
         <Switch>
           <Route exact path="/" component={People}></Route>

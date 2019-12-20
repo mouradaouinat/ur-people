@@ -52,7 +52,7 @@ const Description = styled.p`
 
 const WorkedOn = () => {
   return (
-    <Container>
+    <Container id="worked-on">
       <ProjectImage>
         <img src={jibleLogo} alt="jible" />
       </ProjectImage>

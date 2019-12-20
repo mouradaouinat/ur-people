@@ -27,6 +27,7 @@ const Nav = styled.nav`
 const NavItem = styled.li`
   padding-left: 3rem;
   margin-bottom: 0.8rem;
+  list-style: none;
 
   ${props =>
     props.main &&
@@ -35,7 +36,6 @@ const NavItem = styled.li`
       font-size: 1.6rem;
       margin-bottom: 1rem;
       text-transform: uppercase;
-      list-style: none;
       padding-left: 0;
     `}
 `;
@@ -43,18 +43,34 @@ const NavItem = styled.li`
 const Navigation = () => (
   <Container>
     <Nav>
-      <Title>navigation</Title>
+      <Title>Navigation</Title>
       <ul>
-        <NavItem main>general information</NavItem>
-        <NavItem>education</NavItem>
-        <NavItem main>remote assessement</NavItem>
-        <NavItem>condidate assessement</NavItem>
-        <NavItem>team evaluation / review</NavItem>
-        <NavItem>coding challenge</NavItem>
-        <NavItem>team feedback</NavItem>
-        <NavItem main>bootcamp assessment</NavItem>
-        <NavItem>courses</NavItem>
-        <NavItem>worked on</NavItem>
+        <NavItem main>
+          <i className="fa fa-id-card-o"></i> general information
+        </NavItem>
+        <NavItem>
+          <a href="#education">Education</a>
+        </NavItem>
+        <NavItem main>
+          <i className="fa fa-id-card-o"></i> Remote Essessement
+        </NavItem>
+        <NavItem>Condidate Assessement</NavItem>
+        <NavItem>Team Evaluation / Review</NavItem>
+        <NavItem>
+          <a href="#coding-challenge">Coding Challenge</a>
+        </NavItem>
+        <NavItem>
+          <a href="#feedback">Team Feedback</a>
+        </NavItem>
+        <NavItem main>
+          <i className="fa fa-id-card-o"></i> Bootcamp Assessment
+        </NavItem>
+        <NavItem>
+          <a href="#worked-on">Worked On</a>
+        </NavItem>
+        <NavItem>
+          <a href="#courses">Courses</a>
+        </NavItem>
       </ul>
     </Nav>
   </Container>

@@ -83,7 +83,7 @@ const Rating = styled.span`
 const CodingChallenge = ({ candidate }) => {
   const { evaluation } = candidate;
   return (
-    <section>
+    <section id="coding-challenge">
       <Container>
         <Card>
           <CardTitle>Reposotory Requirement</CardTitle>

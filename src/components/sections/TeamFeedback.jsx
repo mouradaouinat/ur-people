@@ -45,60 +45,28 @@ const Rating = styled.span`
   margin-right: 0.5rem;
 `;
 
-const TeamFeedback = () => (
-  <Container>
-    <Wrapper>
-      <ContentHeading>
-        <div>
-          <img
-            src="https://ca.slack-edge.com/T02QFPDEX-U02QFPDEZ-81d30bcde900-512"
-            alt="Owner of UR"
-          />
-        </div>
-        <div>
-          <h3>Yassine Kachchani</h3>
-          <span>Talent Aquisition</span>
-        </div>
-        <Rating>
-          Yes{" "}
-          <span role="img" aria-label="emoji">
-            👍
-          </span>
-        </Rating>
-      </ContentHeading>
-      <FeedBack>
-        Has proven ability to produce creative, original ideas, plans, products
-        or methods even if they’re not always practical, in line with
-        organization needs, or successful. - Passion - Culture fit -
-        Communication - Collab
-      </FeedBack>
-    </Wrapper>
-    <Wrapper>
-      <ContentHeading>
-        <div>
-          <img
-            src="https://ca.slack-edge.com/T02QFPDEX-U0F3ZM26M-8bb4a417dc1d-512"
-            alt="Owner of UR"
-          />
-        </div>
-        <div>
-          <h3>Zack Braska</h3>
-          <span>Talent Aquisition</span>
-        </div>
-        <Rating>
-          Strong Yes{" "}
-          <span role="img" aria-label="emoji">
-            👍👍
-          </span>
-        </Rating>
-      </ContentHeading>
-      <FeedBack>
-        Has proven ability to produce creative, original ideas, plans, products
-        or methods even if they’re not always practical, in line with
-        organization needs, or successful. - Passion - Culture fit -
-        Communication - Collab
-      </FeedBack>
-    </Wrapper>
+const TeamFeedback = ({ candidate }) => (
+  <Container id="feedback">
+    {candidate.feedback.map(feedback => (
+      <Wrapper key={feedback.reviewer}>
+        <ContentHeading>
+          <div>
+            <img src={feedback.image} alt="Owner of UR" />
+          </div>
+          <div>
+            <h3>{feedback.reviewer}</h3>
+            <span>{feedback.role}</span>
+          </div>
+          <Rating>
+            {feedback.rating.verdict}{" "}
+            <span role="img" aria-label="emoji">
+              {feedback.rating.emoji}
+            </span>
+          </Rating>
+        </ContentHeading>
+        <FeedBack>{feedback.review}</FeedBack>
+      </Wrapper>
+    ))}
   </Container>
 );
 
