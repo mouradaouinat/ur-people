@@ -61,17 +61,13 @@ const Navigation = () => (
     <Nav>
       <Title>Navigation</Title>
       <ul>
-        <NavItem main>
-          <i className="fa fa-id-card-o"></i> general information
-        </NavItem>
+        <NavItem main>general information</NavItem>
         <NavItem>
           <a href="#education">
             <Dot></Dot> Education
           </a>
         </NavItem>
-        <NavItem main>
-          <i className="fa fa-id-card-o"></i> Remote Essessement
-        </NavItem>
+        <NavItem main>Remote Essessement</NavItem>
         {/* <NavItem>
           <Dot></Dot> Condidate Assessement
         </NavItem> */}
@@ -85,9 +81,7 @@ const Navigation = () => (
             <Dot></Dot> Team Feedback
           </a>
         </NavItem>
-        <NavItem main>
-          <i className="fa fa-id-card-o"></i> Bootcamp Assessment
-        </NavItem>
+        <NavItem main>Bootcamp Assessment</NavItem>
         <NavItem>
           <a href="#worked-on">
             <Dot></Dot> Worked On

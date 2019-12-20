@@ -51,7 +51,7 @@ const Search = styled.div`
 
 const Condidates = styled.div`
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   flex-wrap: wrap;
 `;
 

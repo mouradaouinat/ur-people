@@ -5,22 +5,22 @@ import styled, { css } from "styled-components";
 const Container = styled.div`
   display: flex;
   justify-content: left;
-  width: 50rem;
+  width: 46rem;
   margin-bottom: 4rem;
   border-radius: 0.8rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 
   @media only screen and (max-width: 768px) {
-    width: 40rem;
-    background-color: #fff;
-    padding: 1.5rem;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
   }
 `;
 
 const Image = styled.div`
   border-radius: 0.4rem;
   overflow: hidden;
-  margin-right: 3rem;
+  margin-right: 5rem;
 
   img {
     height: 25rem;
@@ -34,7 +34,7 @@ const Image = styled.div`
 `;
 
 const ParamList = styled.ul`
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   li {
     margin-bottom: 3rem;
@@ -50,22 +50,36 @@ const ParamList = styled.ul`
 `;
 
 const Button = styled.button`
-  all: unset;
   cursor: pointer;
+  border: 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  background-color: rgba(96, 80, 220, 0.1);
+  color: #6050dc;
+  font-weight: 700;
+  width: 10rem;
+  border: 1px solid #6050dc;
 
   ${props =>
     props.red &&
     css`
-      color: red;
+      color: rgba(246, 71, 71, 1);
+      background-color: rgba(246, 71, 71, 0.1);
+      color: rgba(246, 71, 71, 1);
+      font-weight: 700;
+      width: 10rem;
+      border: 1px solid rgba(246, 71, 71, 1);
     `}
 `;
 
 const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
   return (
     <Container>
-      <Image>
-        <img src={avatar} alt={avatar} />
-      </Image>
+      <Link className="view-link" to={`/profile/${id}`}>
+        <Image>
+          <img src={avatar} alt={avatar} />
+        </Image>
+      </Link>
       <ParamList>
         <li>
           <Button>
@@ -73,9 +87,9 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
           </Button>
         </li>
         <li>
-          <Link className="view-link" to={`/profile/${id}`}>
-            <i className="fa fa-eye"></i> View
-          </Link>
+          <Button>
+            <i className="fa fa-edit"></i> Edit
+          </Button>
         </li>
         <li>
           <Button onClick={() => onDuplicate(id)}>
@@ -83,7 +97,7 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
           </Button>
         </li>
         <li>
-          <Button style={{ color: "#ff1a1a" }} onClick={() => onDelete(id)}>
+          <Button red onClick={() => onDelete(id)}>
             <i className="fa fa-trash-o"></i> Delete
           </Button>
         </li>
