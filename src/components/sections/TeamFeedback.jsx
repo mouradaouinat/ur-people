@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Container = styled.div`
   background-color: #fff;
   border-radius: 1rem;
-  padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
@@ -12,7 +11,11 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   position: relative;
-  margin-bottom: 3rem;
+  padding: 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 0.5px solid #dedede;
+  }
 `;
 
 const ContentHeading = styled.div`
@@ -32,7 +35,7 @@ const ContentHeading = styled.div`
 `;
 
 const FeedBack = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
 const Rating = styled.span`

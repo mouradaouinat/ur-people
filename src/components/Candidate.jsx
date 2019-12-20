@@ -32,8 +32,10 @@ const Image = styled.div`
     width: 25rem;
 
     @media only screen and (max-width: 600px) {
-      height: 20rem;
-      width: 20rem;
+      height: 16rem;
+      width: 16rem;
+      margin-top: 2rem;
+      margin-left: 1rem;
     }
   }
 `;
@@ -64,6 +66,9 @@ const Button = styled.button`
   font-weight: 700;
   width: 10rem;
   border: 1px solid #6050dc;
+
+  @media only screen and (max-width: 600px) {
+  }
 
   &:hover {
     background-color: rgba(96, 80, 220, 0.3);
