@@ -9,10 +9,10 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   background: #fff;
-
-  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  border-radius: 1rem;
   box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   padding-top: 2rem;
+  padding-bottom: 0.8rem;
 
   @media only screen and (max-width: 600px) {
     border-radius: 0 0 0.5rem 0.5rem;
@@ -22,6 +22,11 @@ const Container = styled.div`
 const Course = styled.div`
   display: flex;
   padding: 1rem;
+  margin-bottom: 2rem;
+
+  &:not(:last-child) {
+    border-bottom: 0.5px solid #dedede;
+  }
 `;
 
 const CourseTitle = styled.div`
