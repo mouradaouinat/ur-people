@@ -164,7 +164,7 @@ export const candidates = [
         role: "Head of Engineering",
         image: "https://ca.slack-edge.com/T02QFPDEX-U0F3ZM26M-8bb4a417dc1d-512",
         review:
-          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+          "Aiming for a top job in the organization. He sets very high standards, aware that this will bring attention and promotion. ",
         rating: {
           verdict: "strong yes",
           emoji: "👍👍"
@@ -175,10 +175,10 @@ export const candidates = [
         role: "CTO and Founder",
         image: "https://ca.slack-edge.com/T02QFPDEX-U02QFPF6D-474149b77635-512",
         review:
-          "Has proven ability to produce creative, original ideas, plans, products or methods even if they’re not always practical, in line with organization needs, or successful. - Passion - Culture fit - Communication - Collab",
+          "has outstanding artistic or craft skills, bringing creativity and originality to the task. ",
         rating: {
-          verdict: "no",
-          emoji: "👎"
+          verdict: "yes",
+          emoji: "👍"
         }
       }
     ]

@@ -84,7 +84,9 @@ class People extends Component {
   };
 
   render() {
+    const url = window.location.href;
     const { candidates } = this.props;
+    console.log(url);
     return (
       <Container>
         <Nav>
