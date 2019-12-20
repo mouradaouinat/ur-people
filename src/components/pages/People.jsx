@@ -69,10 +69,6 @@ const Banner = styled.div`
 `;
 
 class People extends Component {
-  state = {
-    isModalOpen: false
-  };
-
   handleDelete = id => {
     const { deleteCandidate } = this.props;
     deleteCandidate(id);

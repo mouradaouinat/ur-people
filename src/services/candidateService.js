@@ -46,7 +46,7 @@ export const candidates = [
     progress: {
       datasets: [
         {
-          borderColor: "#FBFF00",
+          borderColor: "#6050dc",
           lineTension: 0.4,
           data: [
             "30",
@@ -66,7 +66,7 @@ export const candidates = [
           fill: false
         },
         {
-          borderColor: "#F85C50",
+          borderColor: "#32CD32",
           lineTension: 0.4,
           data: [
             "20",
@@ -86,7 +86,7 @@ export const candidates = [
           fill: false
         },
         {
-          borderColor: "#FF008B",
+          borderColor: "#bcd4e6",
           lineTension: 0.4,
           data: [
             "13",
@@ -234,7 +234,7 @@ export const candidates = [
     progress: {
       datasets: [
         {
-          borderColor: "#F5A623",
+          borderColor: "#6050dc",
           lineTension: 0.4,
           data: [
             "24",
@@ -254,7 +254,7 @@ export const candidates = [
           fill: false
         },
         {
-          borderColor: "#7ED321",
+          borderColor: "#32CD32",
           lineTension: 0.4,
           data: [
             "13",
@@ -274,7 +274,7 @@ export const candidates = [
           fill: false
         },
         {
-          borderColor: "#8B572A",
+          borderColor: "#bcd4e6",
           lineTension: 0.4,
           data: [
             "40",
