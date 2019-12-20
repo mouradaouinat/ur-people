@@ -96,7 +96,7 @@ class People extends Component {
           </Search>
         </Nav>
         <Banner>
-          <h1>All Candidates</h1>
+          <h1>{`showing ${candidates.length} candidates`}</h1>
         </Banner>
         <Condidates>
           {candidates.map(candidate => (

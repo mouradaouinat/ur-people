@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
@@ -11,6 +11,11 @@ const Container = styled.div`
   background-color: #fff;
   padding: 1.5rem;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  }
 
   @media only screen and (max-width: 768px) {
     margin-right: 0;
@@ -60,6 +65,10 @@ const Button = styled.button`
   width: 10rem;
   border: 1px solid #6050dc;
 
+  &:hover {
+    background-color: rgba(96, 80, 220, 0.3);
+  }
+
   ${props =>
     props.red &&
     css`
@@ -69,10 +78,31 @@ const Button = styled.button`
       font-weight: 700;
       width: 10rem;
       border: 1px solid rgba(246, 71, 71, 1);
+
+      &:hover {
+        background-color: rgba(246, 71, 71, 0.3);
+      }
     `}
 `;
 
 const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
+  const [isCopied, setIsCopied] = useState(false);
+
+  function copyStringToClipboard(str) {
+    const el = document.createElement("textarea");
+    el.value = str;
+    el.setAttribute("readonly", "");
+    el.style = { position: "absolute", left: "-9999px" };
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 1000);
+  }
+
+  const url = window.location.href;
+
   return (
     <Container>
       <Link className="view-link" to={`/profile/${id}`}>
@@ -82,8 +112,9 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
       </Link>
       <ParamList>
         <li>
-          <Button>
-            <i className="fa fa-link"></i> Copy link
+          <Button onClick={() => copyStringToClipboard(`${url}profile/${id}`)}>
+            <i className="fa fa-link"></i>
+            {isCopied ? " Copied" : " Copy link"}
           </Button>
         </li>
         <li>
