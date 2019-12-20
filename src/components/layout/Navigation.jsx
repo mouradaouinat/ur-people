@@ -28,6 +28,13 @@ const NavItem = styled.li`
   padding-left: 3rem;
   margin-bottom: 0.8rem;
   list-style: none;
+  font-size: 1.2rem;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #212121;
+  }
 
   ${props =>
     props.main &&
@@ -40,6 +47,15 @@ const NavItem = styled.li`
     `}
 `;
 
+const Dot = styled.div`
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 1rem;
+  background-color: #6050dc;
+  display: inline-block;
+  margin-right: 0.5rem;
+`;
+
 const Navigation = () => (
   <Container>
     <Nav>
@@ -49,27 +65,38 @@ const Navigation = () => (
           <i className="fa fa-id-card-o"></i> general information
         </NavItem>
         <NavItem>
-          <a href="#education">Education</a>
+          <a href="#education">
+            <Dot></Dot> Education
+          </a>
         </NavItem>
         <NavItem main>
           <i className="fa fa-id-card-o"></i> Remote Essessement
         </NavItem>
-        <NavItem>Condidate Assessement</NavItem>
-        <NavItem>Team Evaluation / Review</NavItem>
+        {/* <NavItem>
+          <Dot></Dot> Condidate Assessement
+        </NavItem> */}
         <NavItem>
-          <a href="#coding-challenge">Coding Challenge</a>
+          <a href="#coding-challenge">
+            <Dot></Dot> Coding Challenge
+          </a>
         </NavItem>
         <NavItem>
-          <a href="#feedback">Team Feedback</a>
+          <a href="#feedback">
+            <Dot></Dot> Team Feedback
+          </a>
         </NavItem>
         <NavItem main>
           <i className="fa fa-id-card-o"></i> Bootcamp Assessment
         </NavItem>
         <NavItem>
-          <a href="#worked-on">Worked On</a>
+          <a href="#worked-on">
+            <Dot></Dot> Worked On
+          </a>
         </NavItem>
         <NavItem>
-          <a href="#courses">Courses</a>
+          <a href="#courses">
+            <Dot></Dot> Courses
+          </a>
         </NavItem>
       </ul>
     </Nav>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin: 4rem 0;
+  margin: 3rem 0;
 `;
 
 const Container = styled.div`
@@ -16,23 +16,6 @@ const Container = styled.div`
 
   @media only screen and (max-width: 600px) {
     border-radius: 0 0 0.5rem 0.5rem;
-  }
-`;
-
-const Tabs = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Tab = styled.div`
-  width: 15rem;
-  height: 3rem;
-  background-color: #fff;
-  text-align: center;
-  padding-top: 1rem;
-
-  @media only screen and (max-width: 600px) {
-    width: 10rem;
   }
 `;
 
@@ -60,11 +43,6 @@ const CourseContent = styled.div`
 const Courses = () => {
   return (
     <Wrapper id="courses">
-      <Tabs>
-        <Tab>Product</Tab>
-        <Tab>Communication</Tab>
-        <Tab>Collaboration</Tab>
-      </Tabs>
       <Container>
         <Course>
           <CourseTitle>React Authentification</CourseTitle>
