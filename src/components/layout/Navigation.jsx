@@ -30,10 +30,22 @@ const NavItem = styled.li`
   list-style: none;
   font-size: 1.2rem;
 
-  a:link,
-  a:visited {
+  a {
     text-decoration: none;
     color: #212121;
+    &:link {
+      text-decoration: none;
+      color: #212121;
+    }
+
+    &:visited {
+      text-decoration: none;
+      color: #212121;
+    }
+
+    &:hover {
+      color: #6050dc;
+    }
   }
 
   ${props =>

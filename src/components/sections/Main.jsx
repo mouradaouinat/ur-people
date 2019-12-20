@@ -13,10 +13,9 @@ import Progress from "./Progress.jsx";
 const Heading = styled.h1`
   text-transform: uppercase;
   color: #6050dc;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: left;
   font-weight: 500;
-  letter-spacing: 0.1rem;
 `;
 
 const HeadingDescription = styled.h3`
@@ -41,7 +40,7 @@ const Main = ({ candidate }) => {
   return (
     <Container>
       <Heading>General information</Heading>
-      <SectionHeading title="Work information"></SectionHeading>
+      <SectionHeading title="Work information" line={true}></SectionHeading>
       <WorkExperience candidate={candidate}></WorkExperience>
       <SectionHeading title="Education"></SectionHeading>
       <Education candidate={candidate}></Education>

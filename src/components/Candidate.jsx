@@ -10,11 +10,11 @@ const Container = styled.div`
   border-radius: 0.8rem;
   background-color: #fff;
   padding: 1.5rem;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   transition: all 0.2s ease;
 
   &:hover {
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.7);
   }
 
   @media only screen and (max-width: 768px) {
@@ -114,7 +114,7 @@ const Candidate = ({ id, avatar, onDelete, onDuplicate }) => {
         <li>
           <Button onClick={() => copyStringToClipboard(`${url}profile/${id}`)}>
             <i className="fa fa-link"></i>
-            {isCopied ? " Copied" : " Copy link"}
+            {isCopied ? " Copied!" : " Copy link"}
           </Button>
         </li>
         <li>

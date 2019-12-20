@@ -11,7 +11,7 @@ const Container = styled.div`
   background: #fff;
 
   border-radius: 0 0.5rem 0.5rem 0.5rem;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   padding-top: 2rem;
 
   @media only screen and (max-width: 600px) {

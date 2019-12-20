@@ -59,7 +59,7 @@ const Banner = styled.div`
   background-color: #fff;
   border-radius: 0.8rem;
   padding: 2rem 1rem;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   margin-top: 5rem;
   margin-bottom: 4rem;
 

@@ -11,7 +11,7 @@ const Card = styled.div`
   @media only screen and (max-width: 600px) {
     background: #fff;
     border-radius: 0.5rem;
-    box-shadow: 3px 3px 10px rgba(96, 80, 220, 0.1);
+    box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   }
 `;
 

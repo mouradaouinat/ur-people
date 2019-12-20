@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
 `;
 
 const Wrapper = styled.div`

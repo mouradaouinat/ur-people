@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const MainHeading = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-right: 1.5rem;
   font-weight: 500;
+  position: relative;
+  display: inline-block;
 
   @media only screen and (max-width: 600px) {
     font-size: 2rem;
@@ -13,9 +15,8 @@ const MainHeading = styled.h1`
 
 const MainHeadingWrapper = styled.div`
   padding: 0.1rem;
-  display: flex;
-  justify-content: left;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 `;
 
 const Dot = styled.div`
@@ -23,29 +24,18 @@ const Dot = styled.div`
   width: 0.8rem;
   border-radius: 1rem;
   background-color: #6050dc;
-  margin: 1.3rem 1rem;
+  margin: 0.5rem 1rem;
+  display: inline-block;
 
   @media only screen and (max-width: 600px) {
-    margin: 1rem 1rem;
+    margin-top: 0.5rem 1rem;
   }
 `;
 
-const Line = styled.div`
-  height: 1px;
-  width: 50%;
-  background-color: #6050dc;
-  margin: 1.6rem 0;
-
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
-`;
-
-const SectionHeading = ({ title }) => (
+const SectionHeading = ({ title, line }) => (
   <MainHeadingWrapper>
     <Dot></Dot>
-    <MainHeading>{title}</MainHeading>
-    <Line></Line>
+    <MainHeading line>{title}</MainHeading>
   </MainHeadingWrapper>
 );
 

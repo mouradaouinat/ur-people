@@ -9,7 +9,7 @@ const Container = styled.div`
   height: 6.5rem;
   background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   padding: 2rem;
 `;
 

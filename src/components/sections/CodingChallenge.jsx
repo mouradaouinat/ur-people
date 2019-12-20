@@ -12,7 +12,7 @@ const Card = styled.div`
   background-color: #fff;
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
 
   &:not(:last-child) {
     margin-right: 0.5rem;
@@ -39,7 +39,7 @@ const EvaluationCard = styled.div`
   border-radius: 1rem;
   padding-top: 1rem;
   overflow: hidden;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   margin-bottom: 3rem;
 `;
 

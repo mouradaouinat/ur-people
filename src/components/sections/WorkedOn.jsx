@@ -4,7 +4,7 @@ import jibleLogo from "../../jible-logo.svg";
 
 const Container = styled.div`
   background: #fff;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(235, 235, 235, 0.5);
   width: 100%;
   display: flex;
   margin: 4rem 0;
